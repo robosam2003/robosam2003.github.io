@@ -33,6 +33,7 @@ body {
 }
 
 header {
+    position: relative;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
@@ -40,12 +41,22 @@ header {
 
 .bio {
     display: flex;
+    position: relative;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-
+    text-align: left;
+    max-width: 80%;
+    margin: auto;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.87);
+    padding: 20px;
+}
+
+.bio img {
+    width: 50%;  /* You can adjust this value as needed */
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .bio-content {
@@ -54,8 +65,18 @@ header {
     justify-content: center;
     align-items: center;
     color: black;
+    list-style-type: circle;
+    width: 50%; /* text to take up the other half of the bio oval width */
 }
 
+.bio-content ul {
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    font-weight: normal;
+    text-align: left;
+    margin: 10px;
+    list-style-type: circle;
+}
 
 
 
@@ -69,7 +90,7 @@ header {
     font-family: "Montserrat ExtraBold", sans-serif;
     text-decoration: none;
     text-align: center;
-    max-width: 50%;
+    max-width: 80%;
     color: #000; /* or any color you want */
     background-color: rgba(255, 255, 255, 0.87); /* or any color you want */
     border-radius: 20px;
@@ -131,7 +152,7 @@ footer {
     width: 100%;
     text-align: center;
     background-color: rgb(68, 153, 172);;
-    font-size: 20px
+    font-size: 30px
 }
 
 
@@ -164,4 +185,47 @@ a {
 .header-content ul li:hover {
     text-decoration: underline;
 
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .bio {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px; /* increase padding to give more inner spacing around the contents */
+        max-width: 100%;
+    }
+
+    .bio img,
+    .bio-content {
+        width: 100%; /* both image and text should take up 100% width of the bio oval, stacking vertically */
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-content h1 {
+        position: static;
+        transform: none;
+    }
+
+    .header-content ul {
+        margin-top: 10px;
+    }
+
+    .project-link {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-content img {
+        width: 75%;
+        margin: 0 auto;
+    }
 }
