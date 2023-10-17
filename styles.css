@@ -88,12 +88,20 @@ h2 {
     justify-content: left;
 }
 
+
 .bio-content h4 {
     font-size: 20px;
     font-family: "Montserrat ExtraBold", sans-serif;
     font-weight: bold;
     text-align: left;
     align-content: flex-start;
+    margin: 10px;
+}
+
+.bio-content p {
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    font-weight: normal;
     margin: 10px;
 }
 
@@ -234,6 +242,18 @@ a {
     .bio img,
     .bio-content {
         width: 100%; /* both image and text should take up 100% width of the bio oval, stacking vertically */
+    }
+
+    .bio-content h1 {
+        font-size: 60px;
+    }
+
+    .bio-content h4 {
+        font-size: 40px;
+    }
+
+    .bio-content p {
+        font-size: 30px;
     }
 
     .header-content {
