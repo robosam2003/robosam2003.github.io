@@ -53,6 +53,7 @@ header {
     padding: 20px;
 }
 
+
 .bio img {
     width: 50%;  /* You can adjust this value as needed */
     object-fit: cover;
@@ -65,9 +66,25 @@ header {
     justify-content: left;
     text-align: left;
     align-items: center;
+    margin: auto;
     color: black;
     list-style-type: circle;
     width: 50%; /* text to take up the other half of the bio oval width */
+}
+
+.bio-content h1 {
+    font-size: 40px;
+    font-family: "Montserrat ExtraBold", sans-serif;
+    font-weight: bold;
+}
+
+.bio-content h4 {
+    font-size: 20px;
+    font-family: "Montserrat ExtraBold", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    align-content: flex-start;
+    margin: 10px;
 }
 
 .bio-content ul {
