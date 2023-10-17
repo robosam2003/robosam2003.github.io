@@ -1,0 +1,120 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(23, 50, 69);
+    color: rgba(255, 255, 255, 0.94);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: Add some space between header and menu */
+    padding: 20px;
+    position: relative;
+}
+
+.header-content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.header-content::before {
+    content: "";
+    width: 100px; /* Adjust this value as per your needed space */
+    height: 1px;
+}
+
+.header-content h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project-link {
+    display: block;
+    padding: 15px 30px;
+    margin: 10px auto;
+    font-size: 30px;
+    font-family: "Montserrat ExtraBold", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    max-width: 50%;
+    color: #000; /* or any color you want */
+    background-color: rgba(255, 255, 255, 0.87); /* or any color you want */
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: rgba(255, 255, 255, 0.65); /* or any color you want */
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.project-content img {
+    width: 30%;  /* You can adjust this value as needed */
+    object-fit: contain;  /* This will ensure your image stays within its bounds and maintains its aspect ratio */
+    border-radius: 20px;
+}
+
+
+footer {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(68, 153, 172);;
+    font-size: 20px
+}
+
+
+p {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-right: 10px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
