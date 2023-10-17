@@ -90,7 +90,7 @@ h2 {
 
 
 .bio-content h4 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: "Montserrat ExtraBold", sans-serif;
     font-weight: bold;
     text-align: left;
@@ -98,11 +98,13 @@ h2 {
     margin: 10px;
 }
 
-.bio-content p {
+.bio-content ul {
     font-size: 15px;
     font-family: Montserrat, serif;
     font-weight: normal;
+    text-align: left;
     margin: 10px;
+    list-style-type: circle;
 }
 
 .bio-content ul {
@@ -252,7 +254,7 @@ a {
         font-size: 40px;
     }
 
-    .bio-content p {
+    .bio-content ul {
         font-size: 30px;
     }
 
