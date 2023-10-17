@@ -9,7 +9,7 @@ body {
     justify-content: space-between;
     align-items: center;
     /* Optional: Add some space between header and menu */
-    padding: 20px;
+    padding: 1%;
     position: relative;
 }
 
@@ -38,6 +38,29 @@ header {
     font-size: 20px;
 }
 
+.bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+.bio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+
+
+
+
 .project-link {
     display: block;
     padding: 15px 30px;
@@ -61,20 +84,43 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
 }
 
 .project-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .project-content img {
     width: 30%;  /* You can adjust this value as needed */
     object-fit: contain;  /* This will ensure your image stays within its bounds and maintains its aspect ratio */
     border-radius: 20px;
+}
+
+.project-content h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Montserrat ExtraBold", sans-serif;
+    font-weight: bold;
+}
+
+.project-content p {
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    font-weight: normal;
+    margin: 10px;
+}
+
+.project-content ul {
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    font-weight: normal;
+    text-align: left;
+    margin: 10px;
+    list-style-type: circle;
 }
 
 
@@ -115,6 +161,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.header-content ul li:hover {
     text-decoration: underline;
+
 }
