@@ -107,18 +107,6 @@ h2 {
     list-style-type: circle;
 }
 
-.bio-content ul {
-    font-size: 15px;
-    font-family: Montserrat, serif;
-    font-weight: normal;
-    text-align: left;
-    margin: 10px;
-    list-style-type: circle;
-}
-
-
-
-
 
 
 
@@ -236,8 +224,7 @@ a {
 @media only screen and (max-width: 1450px) {
     .bio {
         flex-direction: column;
-        text-align: center;
-        padding: 50px 20px; /* increase padding to give more inner spacing around the contents */
+        padding: 15px;
         max-width: 100%;
     }
 
